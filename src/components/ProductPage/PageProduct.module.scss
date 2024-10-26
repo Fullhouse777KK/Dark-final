@@ -21,6 +21,8 @@
         display: flex;
         justify-content: center;
         &_img{
+            border-radius: 10px;
+            background-color: white;
             width: 500px;
             height: 500px;
         }
