@@ -1,0 +1,76 @@
+.product{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &_back{
+            &_img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+      &_title{
+        text-align: center;
+      }  
+    }
+    &__mid{
+        display: flex;
+        justify-content: center;
+        &_img{
+            width: 500px;
+            height: 500px;
+        }
+    }
+    &__bot{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &_price{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            &_rating{
+                display: flex;
+                color: yellow;
+                font-weight: 500;
+                font-size: 24px;
+                &_i{
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+            &_pr{
+                color: green;
+                text-decoration: line-through;
+            }
+            &_disc{
+                display: flex;
+                &_te{
+                color: red;      
+                }
+                &_im{
+                    width: 26px;
+                    height: 26px;
+                }
+                
+            }
+        }
+    }
+}
+
+@media(max-width: 500px){
+    
+    .product{
+   &__mid{
+        &_img{
+            width: 320px;
+            height: 320px;
+        }
+}     
+    }
+    
+}

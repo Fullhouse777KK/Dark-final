@@ -1,0 +1,29 @@
+.navbar{
+    background: var(--NavBg);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    &__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 15px;
+        &_link{
+            color: black;
+            font-family: 'GaMaamli';
+            font-size: 30px;
+            position: relative;
+            &_span{
+                color: transparent;
+            }
+            &_img{
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: 8px;
+                right: 71px;
+            }
+        }
+    }
+}

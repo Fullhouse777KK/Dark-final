@@ -1,0 +1,22 @@
+$Opensans: ('Light', 300),
+           ( 'Regular', 400),
+           ('SemiBold', 600),
+           ('Bold',700);
+
+@each $name, $weight in $Opensans{
+    @font-face {
+        font-family: 'OpenSans';
+        src: url(../assets/fonts/OpenSans-#{$name}.ttf);
+        font-weight: $weight;
+    }
+}
+
+$GaMaamli : ('Regular', 400);
+
+@each $name, $weight in $GaMaamli{
+    @font-face {
+        font-family: 'GaMaamli';
+        src: url(../assets/fonts/GaMaamli-Regular.ttf);
+        font-weight: 400;
+    }
+}
